@@ -205,7 +205,8 @@ namespace Programmer
                 if (cbVersion.SelectedIndex > 0)
                 {
                     // Фильтр по версии
-                    if (S.Version.CompareTo(cbVersion.SelectedItem as string) == 0)
+                    if ((S.Version.CompareTo("any") == 0) ||
+                        (S.Version.CompareTo(cbVersion.SelectedItem as string) == 0))
                         AddScriptButton(Cat, S);
                 }
                 else

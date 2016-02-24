@@ -92,6 +92,7 @@ namespace Programmer.Project
 
                 foreach(var S in Scripts)
                 {
+                    if (S.Version.CompareTo("any") == 0) continue;
                     if (!Res.Contains(S.Version))
                         Res.Add(S.Version);
                 }
