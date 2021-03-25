@@ -37,9 +37,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ParamsLib">
-      <HintPath>..\..\..\..\Visual Studio 2013\Projects\ParamsLib\ParamsLib\bin\Debug\ParamsLib.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -113,7 +110,12 @@
   <ItemGroup>
     <Content Include="Programmer.ico" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ParamsLib\ParamsLib.csproj">
+      <Project>{55fd312f-c0d0-4974-a6c6-498e09e9564a}</Project>
+      <Name>ParamsLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
